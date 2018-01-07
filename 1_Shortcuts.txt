@@ -1,0 +1,434 @@
+
+
+
+	SculpGL
+
+		https://stephaneginier.com/sculptgl/?language=english&outline=1&wireframe=1&environment=3&projection=orthographic
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+	------------------------------------------------------------------------------------------------
+	
+
+	Resolution: 
+	___________
+
+
+		_Antes de empezar con el proceso de escultura digital, debemos de configurar previamente
+		
+		el tipo de resolución inicial y el tipo de algoritmo de procesado de la resolución a 
+
+		través, del tiempo
+
+
+
+		Topology:
+		_________
+
+
+
+			MultiResolution:
+			________________
+
+
+				_ésta es la opción por defecto la cuál, nos permitirá ir aumentando progresivamente
+
+				la resolución ha modo de bloque ó niveles de sub-división 
+
+
+				_la opción de "MultiResolution", puede trabajar con la opción
+
+
+					_"Dynamic Topology/Advanced (No Quads)"
+
+
+				activada como desactida la cuál, la combierte en una opción híbrida
+
+
+
+				_de ésta manera, en el modo de "MultiResolution", dispondremos de los siguientes
+
+				controles:
+
+
+					_Resolution:
+
+						_ésta opción nos permitirá acceder ha niveles anteriores y 
+
+						posteriores respectivamente del proceso de scultura digital
+
+
+					_Reverse:
+
+						_(Indeterminado)
+
+
+					_Subdivide:
+
+						_ésta opción nos permitirá agregar un nuevo nivel de sub-división
+
+
+					_Delete Lower:
+
+						_ésta opción nos permitirá borrar el nivel de sub-división más bajo
+
+
+					_delete Higher:
+
+						_ésta opción nos permitirá borrar el nivel de sub-división más alto
+
+
+
+
+			Voxel Remeshing:
+			________________
+
+	
+				_Resolution: (30)
+
+					_lo más recomendable a la hora de empezar ha modelar desde cero a partir
+
+					por ejemplo de una esfera, lo más recomendable es comenzar ha a partir de
+
+					una resolución bajar, por ejemplo de "30", para que así, podamos editar y
+
+					modificar más fácilmente la geometría inicial
+
+
+				_Block:
+
+
+					_tenemos la posibilidad de bloquear la resolución inicial para que así,
+
+					ésta resolución no varie a través, del tiempo lo cuál, es recomendable para
+
+					algunos casos
+
+
+					_para que así, la topología cambie miestras se realiza el proceso de 
+
+					escultura digital más la densidad de la topología no cambiará del valor
+
+					inidicado inicialmente, en éste caso "30"
+
+
+
+
+				_Advanced (No Quads):
+
+					_activar ésta opción nos permitirá disponer de topología dinámica para que
+
+					así, la topología cambie a través, del tiempo al igual que la densidad de
+
+					ésta
+
+
+
+					Subdivision: "15"
+
+						_ésta opción nos permitirá indicarle al sistema la resolución ha
+
+						muestrear ó colocar en la topología a reconstruir en un área 
+
+						determinada en relación al tamaño del pincel ó "Brush Size", actual 
+
+						de la herramienta
+
+
+						_lo más recomendable es un valor alto de por ejemplo de "15"
+
+
+					_Decimation: "75"
+
+						_ésta opción nos permitirá indicarle al sistema la capacicadad ó
+
+						sensibilidad que éste tendrá para bajar la resolución de un área 
+
+						determinada en relación al tamaño del pincel ó "Brush Size", actual 
+
+						de la herramienta
+
+
+						_lo más recomendable es un valor alto de por ejemplo de "75"
+
+
+					_Linear Subdivision:
+
+						_ésta opción tratará de homogenizar la diferencia de resolución entre
+
+						las áras con mayor y menor resolución a la hora de recostruir un área
+
+						determinada en relación al tamaño del pincel ó "Brush Size", actual 
+
+						de la herramienta
+				
+
+
+
+
+	------------------------------------------------------------------------------------------------
+	
+
+	Navegación: 
+	___________
+
+
+
+		_Orbit: Mouse Right Click + Drag | mouse left + click + draw, en el canvas
+
+
+		_Pan: mouse Midle Click + draw | Alt + Mouse Left Click + Drag
+
+
+		_Zoom in/out: Control + mouse scroll wheel up/down
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+	view:
+	_____
+
+
+		_Front | Back View: F/F
+
+
+		_Left | Right View: L/L
+
+
+		_Top | Bottom View: T/T
+
+
+		
+		
+		_Wareframe: W
+
+
+		_Gismo Axis: E
+
+
+		_Isolate: I
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+	Tools:
+	______
+
+
+		_Brush Size: X + Mouse Drag
+
+
+		_Brush Stretch: X + Mouse Drag
+
+
+		_Move along normal: N | Alt
+
+
+		
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Crease: E
+
+		_Draw: D  
+
+		_Flatten: F
+
+		_Inflate: C
+
+		_Pinch: V
+
+		_Smooth: B
+
+		_Reduce Brush: Y (mouse left click "presionado" + mouse right click "una vez y soltar" + drag 
+
+		"permite rebuild dynamic")
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Reduce Brush: Y
+
+			_para obtener una versión extendida de la herramienta, hacer el siguiente comando
+
+			en la aplicación de la haerramienta "mouse left click and drag", y luego hacer una
+
+			vez "mouse right click", y soltar éste último botón y seguir arrastrando para que
+
+			así, la herramienta tome un comportamiento líquido y más dinámico
+
+
+		_Mask: M
+
+			_Mask Interactive: "Control + Drag", con cualquier brush, activa
+
+			_Remove Mask Interactive: "Control + Alt + Drag", con cualquier brush, activa
+
+			_Invert Mask: "Control + mouse left click", sobre un área del canvas vacía, ó "Control + Alt + I"
+
+			_Remove All Mask: "Control + Drag", sobre un área del canvas vacía
+
+
+		_Wareframe: W / Shift + F
+
+
+		----------------------------------------------------------------------------------------
+		
+
+		_New Sphere: Control + N (agregar nuevos objectos)
+
+			_también, podemos duplicar elementos existentes en vez de cargar nuevos, para ésto
+
+			con el elemento activo hacer "Control + C", y "Control + V", ó copiar y pegar éste
+
+			de ésta manera, podremos duplicar elementos los cuales se comportarán de la misma 
+
+			manera que cuando creamos nuevos elementos
+
+
+		_Inport: Control + Shift + E
+
+		_Export: Control + E
+
+		_Open: Control + O
+
+		_Save: Control + Shift + S
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Hiden: select object + H (para cuando trabajamos con múltiples objetos)
+
+		_Show Hiden: Control + H (para cuando trabajamos con múltiples objetos)
+
+		_Isolate On/Off: Control + Shift + Mouse left click and Draw
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Invert: X
+
+			_
+
+	
+		_Detail: 
+
+			_"Q", (esta opción activa y gradua de decitimation interactiva que nos permite
+
+			hacer modelado dinámico de geometría permitiendonos así, tener un resolución variable)
+
+
+		_AirBrush: A
+
+			_modalidad de agregar material de macilla ha modo de Sprite, ó aerógrafo, especialmente
+
+			útil para la creación de elementos protuberantes como tentáculos, otros
+
+
+		_Lazy Mode: L
+
+			_
+
+
+		_Global: 
+
+			_(feedback "oprimir la misma tecla del shortcut, de la herramienta activa")
+
+
+		_Clay D/D (Draw Tool):
+
+			_modalidad de agregar material de macilla ha modo de layers, ó espatulado
+
+
+		_Soft: S/S (Draw Tool):
+
+			_
+
+		
+
+		
+	------------------------------------------------------------------------------------------------
+
+
+	Brush:
+	______
+
+		_Space Bar Menu Contextual
+
+
+
+		_Brush Size/Radio: Shift + Mouse Midle Click and Scroll Up/Down, ó ",/. (coma y punto)"
+
+
+		_Brush Strength/Fuerza: Control + Mouse Midle Click and Scroll Up/Down
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+
+	Brush Aplication:
+	_________________
+
+	
+
+		_Mouse left click: Add
+
+
+		_Mouse left click + Shift: Smooth
+
+		
+		_Mouse left click + Alt: Sub
+
+
+		_Mouse left click + Control: Mask
+
+
+		__Mouse left click + Control + Alt: UnMask
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+
+	Brush Options:
+	______________
+
+
+
+		_Clay: "D/D" modo barro ó lodo de esculpir, esta opción permite agregar material
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+	Menús:
+	______
+
+
+	
+	_Brush Menú: Spacebar
+
+
