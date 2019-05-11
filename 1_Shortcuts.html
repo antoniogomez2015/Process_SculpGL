@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+<!--
+
+	SculpGL
+
+		https://stephaneginier.com/sculptgl/?language=english&outline=1&wireframe=1&environment=3&projection=orthographic
+
+
+		Tutorial:
+			https://www.youtube.com/watch?v=drJJE5hBHN4
+
+			
+///////////////////////////////////////////////////////////////
+
+
+
+
+	-----------------------------------------------------------
+	
+
+	Resolution: 
+	___________
+
+
+		_Antes de empezar con el proceso de escultura digital, debemos de configurar previamente
+		
+		el tipo de resolución inicial y el tipo de algoritmo de procesado de la resolución a través, del tiempo
+
+
+
+		Topology:
+		_________
+
+
+
+			MultiResolution:
+			________________
+
+
+				_�sta es la opci�n por defecto la cu�l, nos permitir� ir aumentando progresivamente
+
+				la resoluci�n ha modo de bloque � niveles de sub-divisi�n 
+
+
+				_la opci�n de "MultiResolution", puede trabajar con la opci�n
+
+
+					_"Dynamic Topology/Advanced (No Quads)"
+
+
+				activada como desactida la cu�l, la combierte en una opci�n h�brida
+
+
+
+				_de �sta manera, en el modo de "MultiResolution", dispondremos de los siguientes
+
+				controles:
+
+
+					_Resolution:
+
+						_�sta opci�n nos permitir� acceder ha niveles anteriores y 
+
+						posteriores respectivamente del proceso de scultura digital
+
+
+					_Reverse:
+
+						_(Indeterminado)
+
+
+					_Subdivide:
+
+						_�sta opci�n nos permitir� agregar un nuevo nivel de sub-divisi�n
+
+
+					_Delete Lower:
+
+						_�sta opci�n nos permitir� borrar el nivel de sub-divisi�n m�s bajo
+
+
+					_delete Higher:
+
+						_�sta opci�n nos permitir� borrar el nivel de sub-divisi�n m�s alto
+
+
+
+
+			Voxel Remeshing:
+			________________
+
+	
+				_Resolution: (30)
+
+					_lo m�s recomendable a la hora de empezar ha modelar desde cero a partir
+
+					por ejemplo de una esfera, lo m�s recomendable es comenzar ha a partir de
+
+					una resoluci�n bajar, por ejemplo de "30", para que as�, podamos editar y
+
+					modificar m�s f�cilmente la geometr�a inicial
+
+
+				_Block:
+
+
+					_tenemos la posibilidad de bloquear la resoluci�n inicial para que as�,
+
+					�sta resoluci�n no varie a trav�s, del tiempo lo cu�l, es recomendable para
+
+					algunos casos
+
+
+					_para que as�, la topolog�a cambie miestras se realiza el proceso de 
+
+					escultura digital m�s la densidad de la topolog�a no cambiar� del valor
+
+					inidicado inicialmente, en �ste caso "30"
+
+
+
+
+				_Advanced (No Quads):
+
+					_activar �sta opci�n nos permitir� disponer de topolog�a din�mica para que
+
+					as�, la topolog�a cambie a trav�s, del tiempo al igual que la densidad de
+
+					�sta
+
+
+
+					Subdivision: "15"
+
+						_�sta opci�n nos permitir� indicarle al sistema la resoluci�n ha
+
+						muestrear � colocar en la topolog�a a reconstruir en un �rea 
+
+						determinada en relaci�n al tama�o del pincel � "Brush Size", actual 
+
+						de la herramienta
+
+
+						_lo m�s recomendable es un valor alto de por ejemplo de "15"
+
+
+					_Decimation: "75"
+
+						_�sta opci�n nos permitir� indicarle al sistema la capacicadad �
+
+						sensibilidad que �ste tendr� para bajar la resoluci�n de un �rea 
+
+						determinada en relaci�n al tama�o del pincel � "Brush Size", actual 
+
+						de la herramienta
+
+
+						_lo m�s recomendable es un valor alto de por ejemplo de "75"
+
+
+					_Linear Subdivision:
+
+						_�sta opci�n tratar� de homogenizar la diferencia de resoluci�n entre
+
+						las �ras con mayor y menor resoluci�n a la hora de recostruir un �rea
+
+						determinada en relaci�n al tama�o del pincel � "Brush Size", actual 
+
+						de la herramienta
+				
+
+
+
+
+	------------------------------------------------------------------------------------------------
+	
+
+	Navegaci�n: 
+	___________
+
+
+
+		_Orbit: Mouse Right Click + Drag | mouse left + click + draw, en el canvas
+
+
+		_Pan: mouse Midle Click + draw | Alt + Mouse Left Click + Drag
+
+
+		_Zoom in/out: Control + mouse scroll wheel up/down
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+	view:
+	_____
+
+
+		_Front | Back View: F/F
+
+
+		_Left | Right View: L/L
+
+
+		_Top | Bottom View: T/T
+
+
+		
+		
+		_Wareframe: W
+
+
+		_Gismo Axis: E
+
+
+		_Isolate: I
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+	Tools:
+	______
+
+
+		_Brush Size: X + Mouse Drag
+
+
+		_Brush Stretch: X + Mouse Drag
+
+
+		_Move along normal: N | Alt
+
+
+		
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Crease: E
+
+		_Draw: D  
+
+		_Flatten: F
+
+		_Inflate: C
+
+		_Pinch: V
+
+		_Smooth: B
+
+		_Reduce Brush: Y (mouse left click "presionado" + mouse right click "una vez y soltar" + drag 
+
+		"permite rebuild dynamic")
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Reduce Brush: Y
+
+			_para obtener una versi�n extendida de la herramienta, hacer el siguiente comando
+
+			en la aplicaci�n de la haerramienta "mouse left click and drag", y luego hacer una
+
+			vez "mouse right click", y soltar �ste �ltimo bot�n y seguir arrastrando para que
+
+			as�, la herramienta tome un comportamiento l�quido y m�s din�mico
+
+
+		_Mask: M
+
+			_Mask Interactive: "Control + Drag", con cualquier brush, activa
+
+			_Remove Mask Interactive: "Control + Alt + Drag", con cualquier brush, activa
+
+			_Invert Mask: "Control + mouse left click", sobre un �rea del canvas vac�a, � "Control + Alt + I"
+
+			_Remove All Mask: "Control + Drag", sobre un �rea del canvas vac�a
+
+
+		_Wareframe: W / Shift + F
+
+
+		----------------------------------------------------------------------------------------
+		
+
+		_New Sphere: Control + N (agregar nuevos objectos)
+
+			_tambi�n, podemos duplicar elementos existentes en vez de cargar nuevos, para �sto
+
+			con el elemento activo hacer "Control + C", y "Control + V", � copiar y pegar �ste
+
+			de �sta manera, podremos duplicar elementos los cuales se comportar�n de la misma 
+
+			manera que cuando creamos nuevos elementos
+
+
+		_Inport: Control + Shift + E
+
+		_Export: Control + E
+
+		_Open: Control + O
+
+		_Save: Control + Shift + S
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Hiden: select object + H (para cuando trabajamos con m�ltiples objetos)
+
+		_Show Hiden: Control + H (para cuando trabajamos con m�ltiples objetos)
+
+		_Isolate On/Off: Control + Shift + Mouse left click and Draw
+
+
+		----------------------------------------------------------------------------------------
+
+
+		_Invert: X
+
+			_
+
+	
+		_Detail: 
+
+			_"Q", (esta opci�n activa y gradua de decitimation interactiva que nos permite
+
+			hacer modelado din�mico de geometr�a permitiendonos as�, tener un resoluci�n variable)
+
+
+		_AirBrush: A
+
+			_modalidad de agregar material de macilla ha modo de Sprite, � aer�grafo, especialmente
+
+			�til para la creaci�n de elementos protuberantes como tent�culos, otros
+
+
+		_Lazy Mode: L
+
+			_
+
+
+		_Global: 
+
+			_(feedback "oprimir la misma tecla del shortcut, de la herramienta activa")
+
+
+		_Clay D/D (Draw Tool):
+
+			_modalidad de agregar material de macilla ha modo de layers, � espatulado
+
+
+		_Soft: S/S (Draw Tool):
+
+			_
+
+		
+
+		
+	------------------------------------------------------------------------------------------------
+
+
+	Brush:
+	______
+
+		_Space Bar Menu Contextual
+
+
+
+		_Brush Size/Radio: Shift + Mouse Midle Click and Scroll Up/Down, � ",/. (coma y punto)"
+
+
+		_Brush Strength/Fuerza: Control + Mouse Midle Click and Scroll Up/Down
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+
+	Brush Aplication:
+	_________________
+
+	
+
+		_Mouse left click: Add
+
+
+		_Mouse left click + Shift: Smooth
+
+		
+		_Mouse left click + Alt: Sub
+
+
+		_Mouse left click + Control: Mask
+
+
+		_Mouse left click + Control + Alt: UnMask
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+
+	Brush Options:
+	______________
+
+
+
+		_Clay: "D/D" modo barro � lodo de esculpir, esta opci�n permite agregar material
+
+
+
+
+	------------------------------------------------------------------------------------------------
+
+
+	Men�s:
+	______
+
+
+	
+	_Brush Men�: Spacebar
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>

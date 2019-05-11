@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+
+    Workflow:
+    _________
+
+        Matcap:
+
+            _es recomendable utilizar hi matcap, ó material que nos permita visualizar fácilmente las formas del modelo
+
+            _para lo cuál, debemos de ir a la secicón de "Rendering/Shader/Matcap", y una vez allí, podremos seleccionar "Skin Hazzadousart2"
+
+
+
+        Densidad Poligonal:
+        ___________________
+
+            _es altamente recomendable comenzar cualquier modelado con una muy baja densidad poligonal
+
+            _para que así, podamos hacer una forma base y a su vez, tener la posibilidad de corregirla fácilmente
+
+            _para lo cuál, debemos de ir a la sección de "Topology/Voxel", en la cuál, tendremos dos opciones de generación de geometría, las cuáles son:
+
+
+                _Voxel Remeshing (Quads):
+
+                    _ésta opción generará quads, ó polígonos de cuatro lados
+
+
+                _Voxel Remeshing (Manifold tris):
+
+                    _ésta opción generará triads, ó polígonos de tres lados
+
+
+            _y en ambas opciones podremos indicar la cantidad de polígonos ó resolución a la cuál, deseamos resamplear la geometría base
+
+            _de ésta manera, es recomendable comenzar con un valor ó densidad pologonal bajo, ejemplo; "30"
+
+            _para a continuación darle al botón de "Remesh", en cualquiera de las dos opciones anteriores
+
+
+
+        Dynamic Topology:
+        _________________
+
+            _ésta opción nos permitirá generar una topología dinámica para la cración orgánica y creativa de elementos de forma práctica y rápida
+
+            _para lo cuál, debemos de ir ha "Topology/Dynamic Topology", y una vez allí, debemos de activar las opciones de "Activated (no quads)"
+
+            _de ésta manera, a partir de éste punto podremos ahora disponer de una retopología dinámica e interactiva en relación al grado de zoom, ó acercamiento de forma interactiva en el viewport
+
+            _así, entre más cerca estemos de un detalle podremos automáticamente agregar más densidad poligonal ha esa área en específico y viceversa
+
+            _entre más lejos estemos de un detalle, eliminaremos densidad pologonal de esa área en específico
+
+            _más también, podremos determinar límites en ésta modalidad a través, de los parámetros de:
+
+
+                _Subdivision:
+
+                    _ésta opción nos pemritirá determianr el máximo nivel de densidad aplicable ha un área
+
+                    _de ésta manera, podremos determinar la una densidad mínima aceptable en relación de nuestros recursos instalados en nuestro sistema
+
+
+                _Decimation:
+
+                    _ésta opción nos pemritirá determinar un límite para la eliminación ó simplificación de la densidad poligonal 
+                    
+                    _cuando nos elejemos de un detalle para simplificar la densidad poligonal de un área determinada
+
+
+
+        MultiResolution:
+        ________________
+
+            _ésta opción sólo aplicará cuando importemos una geometría la cuál, contenga un topología y uvs, y demás elementos
+
+            _de ésta manera, podremos ir agregando nuvos niveles de sub división y detalle de forma no destructiva
+
+
+
+
+
+
+-->
+</body>
+</html>
